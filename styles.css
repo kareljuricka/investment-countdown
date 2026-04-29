@@ -144,24 +144,15 @@ body {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   text-decoration: none;
-  color: var(--white);
   line-height: 1;
 }
 
-.brand-word {
-  font-weight: 700;
-  font-size: 32px;
-  letter-spacing: -0.025em;
-  color: var(--white);
-}
-
-.brand-mark {
-  width: 30px;
-  height: 26px;
+.brand-logo {
+  height: 36px;
+  width: auto;
   display: block;
-  filter: drop-shadow(0 0 10px rgba(29, 190, 255, 0.45));
+  filter: drop-shadow(0 0 14px rgba(29, 190, 255, 0.35));
 }
 
 .status {
@@ -559,12 +550,8 @@ body.critical .status-dot {
   .topbar {
     padding: 22px 20px;
   }
-  .brand-word {
-    font-size: 26px;
-  }
-  .brand-mark {
-    width: 25px;
-    height: 22px;
+  .brand-logo {
+    height: 28px;
   }
   .hero {
     padding: 24px 20px 56px;
