@@ -8,45 +8,45 @@
       name="description"
       content="Countdown to the signing of Webout's investment round."
     />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#0c082b" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grid-bg" aria-hidden="true"></div>
-    <div class="glow glow-1" aria-hidden="true"></div>
-    <div class="glow glow-2" aria-hidden="true"></div>
+    <div class="stripes" aria-hidden="true"></div>
+    <div class="orb orb-cyan" aria-hidden="true"></div>
+    <div class="orb orb-purple" aria-hidden="true"></div>
 
     <header class="topbar">
-      <a class="brand" href="https://webout.me/" rel="noopener">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="dot"></span>
-        </span>
-        <span class="brand-name">webout</span>
+      <a class="brand" href="https://webout.me/" rel="noopener" aria-label="Webout">
+        <span class="brand-word">webout</span>
+        <svg
+          class="brand-mark"
+          viewBox="0 0 36 32"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1dbeff" />
+              <stop offset="100%" stop-color="#5344ff" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M2 2 L20 16 L2 30 Z M14 2 L32 16 L14 30 Z"
+            fill="url(#markGrad)"
+          />
+        </svg>
       </a>
-      <nav class="topnav">
-        <span class="status">
-          <span class="status-dot" aria-hidden="true"></span>
-          Round closing
-        </span>
-      </nav>
+
+      <span class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        Round closing
+      </span>
     </header>
 
     <main class="hero">
-      <div class="eyebrow">
-        <span>Investment Round · Series Signing</span>
-      </div>
+      <span class="eyebrow">Investment round · Signing today</span>
 
       <h1 class="title">
         Time left to sign the<br />
@@ -54,8 +54,8 @@
       </h1>
 
       <p class="lead">
-        The clock runs out at midnight. Real-time deals deserve real-time
-        deadlines.
+        Real-time technology built the company. A real-time deadline closes the
+        round. The clock runs out at midnight.
       </p>
 
       <section
@@ -97,19 +97,14 @@
       <div class="cta-row">
         <a class="cta primary" href="https://webout.me/" rel="noopener">
           Visit webout.me
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            aria-hidden="true"
-          >
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
             <path
-              d="M3 8h10M9 4l4 4-4 4"
+              d="M3 9h11M10 4l5 5-5 5"
               stroke="currentColor"
-              stroke-width="1.6"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
+              fill="none"
             />
           </svg>
         </a>
