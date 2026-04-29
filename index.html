@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webout · Investment Signing Countdown</title>
+    <meta
+      name="description"
+      content="Countdown to the signing of Webout's investment round."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="https://webout.me/" rel="noopener">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="dot"></span>
+        </span>
+        <span class="brand-name">webout</span>
+      </a>
+      <nav class="topnav">
+        <span class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Round closing
+        </span>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="eyebrow">
+        <span>Investment Round · Series Signing</span>
+      </div>
+
+      <h1 class="title">
+        Time left to sign the<br />
+        <span class="title-accent">Webout investment</span>
+      </h1>
+
+      <p class="lead">
+        The clock runs out at midnight. Real-time deals deserve real-time
+        deadlines.
+      </p>
+
+      <section
+        class="countdown"
+        aria-label="Countdown to midnight"
+        id="countdown"
+      >
+        <div class="unit" data-unit="hours">
+          <span class="value" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit" data-unit="minutes">
+          <span class="value" id="minutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit" data-unit="seconds">
+          <span class="value" id="seconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </section>
+
+      <div class="meta">
+        <div class="meta-row">
+          <span class="meta-key">Deadline</span>
+          <span class="meta-val" id="deadline">—</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-key">Local time</span>
+          <span class="meta-val" id="now">—</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-key">Timezone</span>
+          <span class="meta-val" id="tz">—</span>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="cta primary" href="https://webout.me/" rel="noopener">
+          Visit webout.me
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 8h10M9 4l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <span class="cta-note">
+          Real-time technology for personalized &amp; shoppable video.
+        </span>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Webout</span>
+      <span class="dot-sep" aria-hidden="true">·</span>
+      <span>Built for the round closing today</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
